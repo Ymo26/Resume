@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yi Luo — CV / Portfolio</title>
+  <meta name="description" content="Projects, research, and experience of Yi Luo." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <meta property="og:title" content="Yi Luo — CV / Portfolio">
+  <meta property="og:description" content="Projects, research, and experience.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://YOUR-USERNAME.github.io">
+  <meta property="og:image" content="preview.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://YOUR-USERNAME.github.io">
+
+
+  <style>
+    :root{
+      --bg:#0b0c0f; --panel:#151821; --text:#e6e7eb; --muted:#a7adbb; --accent:#6ea8fe; --ring:rgba(110,168,254,.35);
+      --maxw:1024px
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#0b0c0f,#0e1117);color:var(--text);line-height:1.6}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:var(--maxw);margin-inline:auto;padding:24px}
+    header{position:sticky;top:0;background:rgba(11,12,15,.6);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid rgba(255,255,255,.06);z-index:10}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .avatar{width:60px;height:60px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.15)}
+    h1{font-size:clamp(1.4rem,3.5vw,2.2rem);margin:0}
+    .muted{color:var(--muted)}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;background:var(--panel);border:1px solid rgba(255,255,255,.08);color:var(--text);font-weight:600}
+    .btn:hover{border-color:rgba(255,255,255,.18)}
+    main{padding-block:24px}
+    section{background:var(--panel);border:1px solid rgba(255,255,255,.06);border-radius:18px;padding:22px;margin:18px 0}
+    section h2{margin:0 0 8px;font-size:1.1rem;letter-spacing:.3px}
+    .grid{display:grid;gap:14px}
+    @media(min-width:860px){.grid-2{grid-template-columns:2fr 1fr}}
+    ul{margin:8px 0 0 18px}
+    li{margin:4px 0}
+    .card{border:1px solid rgba(255,255,255,.06);background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,0));border-radius:16px;padding:14px}
+    .title-row{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .title{font-weight:700}
+    .pill{font-size:.8rem;color:var(--muted);border:1px solid rgba(255,255,255,.12);padding:2px 8px;border-radius:999px}
+    footer{padding:36px 0 18px;color:var(--muted);font-size:.95rem}
+    :focus-visible{outline:3px solid var(--ring);outline-offset:2px;border-radius:10px}
+    @media print{header,.btn,.pill,#themeToggle{display:none}body{background:#fff;color:#000}section{break-inside:avoid}}
+    /* Light theme (toggleable) */
+    body.light{--bg:#f7f7fb;--panel:#ffffff;--text:#1c1f24;--muted:#5e6777;--accent:#1f6feb;background:#f7f7fb}
+  </style>
+</head>
+<body>
+
+  <script>
+    const DATA = {
+      name: "Yi Luo",
+      title: "Math & Economics (Data Science minor)",
+      location: "Easton, PA · Beijing, CN",
+      email: "Luo18125@163.com",
+      phone: "+86 17600583506 · +01 484-542-2576",
+      links: {
+        website: "https://YOUR-USERNAME.github.io",
+        github: "https://github.com/Ymo26",
+        linkedin: "https://linkedin.com/in/yi-lucas-59b185338"
+      },
+      summary: "Research-focused student combining econometrics, ML, and spatial analysis to study environmental and health outcomes.",
+      education: [
+        { school: "Lafayette College", degree: "B.A. Mathematics & Economics (Minor in Data Science)", location: "Easton, PA", dates: "09/2022 – 12/2025", gpa:"Total 3.5 • Major 3.54 • Minor 3.77" }
+      ],
+      experience: [
+        {
+          org: "Environmental Determinants of Health (2000–2023)", role: "Research Assistant (Advisor: Sayorn Chin)", location: "Lafayette College", dates: "01/2025 – 05/2025",
+          bullets: [
+            "Built a harmonized county‑level longitudinal dataset (EPA, NOAA, CDC WONDER) for 2000–2023 in R.",
+            "Mapped standardized mortality and environmental indexes; exposed urban‑rural and demographic disparities.",
+            "Ran robust regressions to identify environmental and socioeconomic drivers of mortality with policy insights."
+          ]
+        },
+        {
+          org: "Feature Eng., AutoML, Metrics & Smart Viz",
+          role: "Research Assistant (Advisor: J. Yang, Columbia Univ.)",
+          location: "Remote", dates: "12/2024 – 07/2025",
+          bullets: [
+            "Cleaned & imputed data, engineered features; trained models in scikit‑learn & TensorFlow.",
+            "Evaluated via accuracy/precision/F1; interpreted and drafted a research paper."
+          ]
+        }
+      ],
+      projects: [
+        { name: "Decision Trees vs. Random Forests", dates:"01/2025 – 05/2025", blurb:"Benchmarked on skiing and income datasets; RF delivered higher accuracy & stability on complex data." },
+        { name: "Election Campaign Projections (Python)", dates:"09/2024 – 12/2024", blurb:"Analyzed swing states with pandas/matplotlib using historic U.S. election data." },
+        { name: "Urban Heat Islands (R)", dates:"09/2024 – 12/2024", blurb:"Compared day/night temperature patterns across months; spatial buffers & ggplot2." }
+      ],
+      skills:{ languages:["Mandarin (Native)","English (Proficient)"], coding:["R","Stata","Python"], interests:["Sanda (4y)","Skiing (6y, coach cert in progress)"] }
+    };
+  </script>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand">
+      <picture>
+        <source srcset="avatar_Yi.jpg 1x" type="image/jpeg">
+        <img
+          class="avatar"
+          src="avatar_Yi.jpg"    
+          alt="Headshot of Yi Luo"
+          width="72" height="72"
+          loading="eager"
+          decoding="async"
+        />
+      </picture>        
+      <div>
+        <h1 id="name">Your Name</h1>
+        <div class="muted" id="tagline">Your Title • Your Location</div>
+      </div>
+    </div>
+    <div style="display:flex;gap:10px;align-items:center">
+      <button class="btn" id="themeToggle" aria-label="Toggle theme">🌗 Theme</button>
+      <a class="btn" id="siteLink" href="#" target="_blank" rel="noopener">🔗 Website</a>
+      <button class="btn" onclick="window.print()">🖨️ Save as PDF</button>
+    </div>
+  </div>
+</header>
+
+
+  <main class="wrap">
+    <section aria-labelledby="about">
+      <h2 id="about">About</h2>
+      <p id="summary">Short intro...</p>
+      <div class="muted" id="contact"></div>
+    </section>
+
+    <div class="grid grid-2">
+      <section aria-labelledby="experience">
+        <h2 id="experience">Experience / Research</h2>
+        <div id="expList" class="grid"></div>
+      </section>
+
+      <aside>
+        <section aria-labelledby="education">
+          <h2 id="education">Education</h2>
+          <div id="eduList" class="grid"></div>
+        </section>
+        <section aria-labelledby="skills">
+          <h2 id="skills">Skills & Interests</h2>
+          <div id="skillsList" class="card"></div>
+          <div class="card" style="margin-top:10px">
+            <div class="title">Links</div>
+            <ul style="list-style:none;padding-left:0;margin:8px 0" id="linksList"></ul>
+          </div>
+        </section>
+      </aside>
+    </div>
+
+    <section aria-labelledby="projects">
+      <h2 id="projects">Selected Projects</h2>
+      <div id="projList" class="grid" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© <span id="year"></span> <span id="nameFooter"></span>. Built in plain HTML/CSS/JS. • <a id="githubLink" href="#" target="_blank" rel="noopener">GitHub</a></div>
+  </footer>
+
+  <script>
+    const $ = (sel) => document.querySelector(sel);
+    const el = (tag, cls) => { const e=document.createElement(tag); if(cls) e.className=cls; return e };
+
+    function render(){
+      // Header / About
+      $('#name').textContent = DATA.name;
+      $('#nameFooter').textContent = DATA.name;
+      $('#tagline').textContent = `${DATA.title} • ${DATA.location}`;
+      $('#summary').textContent = DATA.summary;
+
+      // Contact line
+      $('#contact').innerHTML = `📍 ${DATA.location} &nbsp;•&nbsp; ✉️ <a href="mailto:${DATA.email}">${DATA.email}</a> &nbsp;•&nbsp; ☎️ ${DATA.phone}`;
+
+      // Links
+      const links = [
+        ['Website', DATA.links.website],
+        ['GitHub', DATA.links.github],
+        ['LinkedIn', DATA.links.linkedin]
+      ].filter(([,url])=>url);
+      const linkUL = $('#linksList'); linkUL.innerHTML='';
+      links.forEach(([label,url])=>{ const li=el('li'); li.innerHTML=`<a href="${url}" target="_blank" rel="noopener">${label} →</a>`; linkUL.appendChild(li) })
+      $('#siteLink').href = DATA.links.website || '#';
+      $('#githubLink').href = DATA.links.github || '#';
+
+      // Education
+      const eduWrap = $('#eduList'); eduWrap.innerHTML='';
+      DATA.education.forEach(ei=>{
+        const c = el('div','card');
+        c.innerHTML = `<div class="title">${ei.school} — ${ei.degree}</div>
+          <div class="muted">${ei.location} • ${ei.dates}</div>
+          ${ei.gpa?`<div class="muted">${ei.gpa}</div>`:''}`;
+        eduWrap.appendChild(c);
+      });
+
+      // Experience
+      const expWrap = $('#expList'); expWrap.innerHTML='';
+      DATA.experience.forEach(x=>{
+        const a = el('article','card');
+        a.innerHTML = `<div class="title-row"><div class="title">${x.org} — ${x.role}</div><div class="pill">${x.dates}</div></div>
+          <div class="muted">${x.location||''}</div>`;
+        const ul = el('ul');
+        (x.bullets||[]).forEach(b=>{ const li=el('li'); li.textContent=b; ul.appendChild(li) })
+        a.appendChild(ul); expWrap.appendChild(a);
+      });
+
+      // Projects
+      const projWrap = $('#projList'); projWrap.innerHTML='';
+      DATA.projects.forEach(p=>{
+        const c = el('article','card');
+        c.innerHTML = `<div class="title">${p.name}</div>
+          <div class="muted">${p.dates||''}</div>
+          <p>${p.blurb||''}</p>`;
+        projWrap.appendChild(c);
+      });
+
+      // Skills
+      const s = DATA.skills||{}; const sk = [];
+      if(s.languages) sk.push(`<b>Languages:</b> ${s.languages.join(', ')}`);
+      if(s.coding) sk.push(`<b>Computer skills:</b> ${s.coding.join(', ')}`);
+      if(s.interests) sk.push(`<b>Interests:</b> ${s.interests.join(', ')}`);
+      $('#skillsList').innerHTML = sk.map(x=>`<div>${x}</div>`).join('');
+
+      // Footer year
+      $('#year').textContent = new Date().getFullYear();
+    }
+
+    // Theme toggle
+    document.getElementById('themeToggle').addEventListener('click',()=>{
+      document.body.classList.toggle('light');
+      localStorage.setItem('theme', document.body.classList.contains('light') ? 'light' : 'dark');
+    });
+    // Restore theme
+    if(localStorage.getItem('theme')==='light') document.body.classList.add('light');
+
+    render();
+  </script>
+
+  <!-- Structured data for better search appearance (edit name/url) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Yi Luo",
+    "url": "https://YOUR-USERNAME.github.io",
+    "email": "mailto:Luo18125@163.com",
+    "telephone": "+8617600583506",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Lafayette College"
+    }
+  }
+  </script>
+</body>
+</html>
